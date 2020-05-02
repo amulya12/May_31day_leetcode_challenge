@@ -5,6 +5,7 @@ public class Solution extends VersionControl {
     public int firstBadVersion(int n) {
     int left = 1;
     int right = n;
+//     here I am using binary search
     while (left < right) {
         int mid = left + (right - left) / 2;
         if (isBadVersion(mid)) {
